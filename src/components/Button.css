@@ -7,13 +7,14 @@
   background-color: #e0e0e0;
 }
 
+.btn-primary {
+  background-color: #3d5afe;
+  color: white;
+}
+
 .default-hover__focus {
   background-color: #aeaeae;
 }
-
-/* .btn:focus {
-  background-color: #aeaeae;
-} */
 
 .variant-outline {
   background-color: transparent;
@@ -25,10 +26,6 @@
 .outline-hover__focus {
   background-color: #eaefff;
 }
-
-/* .variant-outline:hover {
-  background-color: #eaefff;
-} */
 
 .variant-text {
   background-color: transparent;
@@ -44,15 +41,3 @@
   border-width: 0;
   outline: none;
 }
-
-/* .variant-text:focus {
-  background-color: #eaefff;
-  text-align: center;
-  border-width: 0;
-  outline: none;
-}
-
-.variant-text:hover {
-  background-color: #eaefff;
-  text-align: center;
-} */

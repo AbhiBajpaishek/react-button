@@ -1,6 +1,13 @@
 import './Button.css';
 
-export const Button = ({ variant, text, autoFocus, color, action }) => {
+export const Button = ({
+  variant,
+  text,
+  autoFocus,
+  color,
+  action,
+  disableShadow,
+}) => {
   const variantClasses = {
     text: 'variant-text',
     outline: 'variant-outline',
@@ -20,18 +27,21 @@ export const Button = ({ variant, text, autoFocus, color, action }) => {
 
   const classes = `btn ${colorClasses[color]} ${variantClasses[variant]} ${
     action && actionClasses[variant]
-  }`;
+  } ${disableShadow ? 'btn-primary' : ''}
+  `;
+
+  console.log(disableShadow);
   return (
     <button type="button" className={classes} autoFocus={autoFocus}>
-      {text}
+      {'Default'}
     </button>
   );
 };
 
-Button.defaultProps = {
-  text: 'Default',
-  variant: '',
-  autoFocus: false,
-  color: '',
-  action: false,
-};
+// Button.defaultProps = {
+//   text: 'Default',
+//   variant: '',
+//   autoFocus: false,
+//   color: '',
+//   action: false,
+// };

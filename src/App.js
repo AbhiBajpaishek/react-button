@@ -43,6 +43,13 @@ function App() {
             <Button variant="text" action={true} />
           </ButtonContainer>
         </Row>
+
+        <Row>
+          <ButtonContainer>
+            <Label text="<Button disableShadow />" />
+            <Button disableShadow />
+          </ButtonContainer>
+        </Row>
       </main>
     </div>
   );
