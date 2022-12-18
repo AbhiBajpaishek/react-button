@@ -19,7 +19,7 @@ function App() {
 
           <ButtonContainer>
             <Label text="&:hover, &:focus" />
-            <Button variant="" color="default" />
+            <Button action={true} />
           </ButtonContainer>
         </Row>
         <Row>
@@ -30,7 +30,7 @@ function App() {
 
           <ButtonContainer>
             <Label text={'&:hover, &:focus'} />
-            <Button variant="outline" />
+            <Button variant="outline" action={true} />
           </ButtonContainer>
         </Row>
         <Row>
@@ -40,7 +40,7 @@ function App() {
           </ButtonContainer>
           <ButtonContainer>
             <Label text={'&:hover, &:focus'} />
-            <Button variant="text" />
+            <Button variant="text" action={true} />
           </ButtonContainer>
         </Row>
       </main>

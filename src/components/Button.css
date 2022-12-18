@@ -4,19 +4,16 @@
   border-radius: 8px;
   font-weight: 600;
   width: 7rem;
-}
-
-.btn-default {
   background-color: #e0e0e0;
 }
 
-.btn-default:hover {
+.default-hover__focus {
   background-color: #aeaeae;
 }
 
-.btn-default:focus {
+/* .btn:focus {
   background-color: #aeaeae;
-}
+} */
 
 .variant-outline {
   background-color: transparent;
@@ -25,13 +22,13 @@
   color: blue;
 }
 
-.variant-outline:focus {
+.outline-hover__focus {
   background-color: #eaefff;
 }
 
-.variant-outline:hover {
+/* .variant-outline:hover {
   background-color: #eaefff;
-}
+} */
 
 .variant-text {
   background-color: transparent;
@@ -41,7 +38,14 @@
   padding-right: 0;
 }
 
-.variant-text:focus {
+.text-hover__focus {
+  background-color: #eaefff;
+  text-align: center;
+  border-width: 0;
+  outline: none;
+}
+
+/* .variant-text:focus {
   background-color: #eaefff;
   text-align: center;
   border-width: 0;
@@ -51,4 +55,4 @@
 .variant-text:hover {
   background-color: #eaefff;
   text-align: center;
-}
+} */
