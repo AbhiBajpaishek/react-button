@@ -50,6 +50,13 @@ function App() {
             <Button disableShadow />
           </ButtonContainer>
         </Row>
+
+        <Row>
+          <ButtonContainer>
+            <Label text="<Button disabled />" />
+            <Button disabled />
+          </ButtonContainer>
+        </Row>
       </main>
     </div>
   );
