@@ -2,6 +2,7 @@ import './App.css';
 import { Button } from './components/Button.jsx';
 import { Row } from './components/Row';
 import { ButtonContainer } from './components/ButtonContainer';
+import { Label } from './components/Label';
 
 function App() {
   return (
@@ -12,44 +13,34 @@ function App() {
       <main>
         <Row>
           <ButtonContainer>
-            <label className="button-container__label">{'<Button />'}</label>
-            <Button></Button>
+            <Label text="<Button />" />
+            <Button />
           </ButtonContainer>
 
           <ButtonContainer>
-            <label className="button-container__label">
-              '&:hover, &:focus'
-            </label>
-            <Button variant="" color="default"></Button>
+            <Label text="&:hover, &:focus" />
+            <Button variant="" color="default" />
           </ButtonContainer>
         </Row>
         <Row>
           <ButtonContainer>
-            <label className="button-container__label">
-              {'<Button variant="outline"/>'}
-            </label>
-            <Button variant="outline"></Button>
+            <Label text='<Button variant="outline"/>' />
+            <Button variant="outline" />
           </ButtonContainer>
 
           <ButtonContainer>
-            <label className="button-container__label">
-              {'&:hover, &:focus'}
-            </label>
-            <Button variant="outline"></Button>
+            <Label text={'&:hover, &:focus'} />
+            <Button variant="outline" />
           </ButtonContainer>
         </Row>
         <Row>
           <ButtonContainer>
-            <label className="button-container__label">
-              {'<Button variant="text"/>'}
-            </label>
-            <Button variant="text"></Button>
+            <Label text='<Button variant="text"/>' />
+            <Button variant="text" />
           </ButtonContainer>
           <ButtonContainer>
-            <label className="button-container__label">
-              {'&:hover, &:focus'}
-            </label>
-            <Button variant="text"></Button>
+            <Label text={'&:hover, &:focus'} />
+            <Button variant="text" />
           </ButtonContainer>
         </Row>
       </main>
