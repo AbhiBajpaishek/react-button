@@ -1,5 +1,7 @@
 import './App.css';
 import { Button } from './components/Button.jsx';
+import { Row } from './components/Row';
+import { ButtonContainer } from './components/ButtonContainer';
 
 function App() {
   return (
@@ -8,10 +10,48 @@ function App() {
         <h3>Buttons</h3>
       </header>
       <main>
-        <div className="button-container">
-          <label className="button-container__label">{'<Button />'}</label>
-          <Button></Button>
-        </div>
+        <Row>
+          <ButtonContainer>
+            <label className="button-container__label">{'<Button />'}</label>
+            <Button></Button>
+          </ButtonContainer>
+
+          <ButtonContainer>
+            <label className="button-container__label">
+              '&:hover, &:focus'
+            </label>
+            <Button variant="" color="default"></Button>
+          </ButtonContainer>
+        </Row>
+        <Row>
+          <ButtonContainer>
+            <label className="button-container__label">
+              {'<Button variant="outline"/>'}
+            </label>
+            <Button variant="outline"></Button>
+          </ButtonContainer>
+
+          <ButtonContainer>
+            <label className="button-container__label">
+              {'&:hover, &:focus'}
+            </label>
+            <Button variant="outline"></Button>
+          </ButtonContainer>
+        </Row>
+        <Row>
+          <ButtonContainer>
+            <label className="button-container__label">
+              {'<Button variant="text"/>'}
+            </label>
+            <Button variant="text"></Button>
+          </ButtonContainer>
+          <ButtonContainer>
+            <label className="button-container__label">
+              {'&:hover, &:focus'}
+            </label>
+            <Button variant="text"></Button>
+          </ButtonContainer>
+        </Row>
       </main>
     </div>
   );
